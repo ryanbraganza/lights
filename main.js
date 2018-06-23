@@ -21,6 +21,12 @@ async function main() {
     case 'off':
       await wrapper.turnLightOff(lights[0]);
       break;
+    case 'up':
+      await wrapper.turnLightUp(lights[0], 20);
+      break;
+    case 'down':
+      await wrapper.turnLightDown(lights[0], 20);
+      break;
     default:
       throw new Error('Unexpected arg ', args[0]);
   }

@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node main.js",
     "on": "node main.js on",
-    "off": "node main.js off"
+    "off": "node main.js off",
+    "up": "node main.js up",
+    "down": "node main.js down"
   },
   "author": "Ryan Braganza <ryan.braganza@gmail.com>",
   "license": "MIT",

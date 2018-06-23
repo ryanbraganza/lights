@@ -29,9 +29,20 @@ class Wrapper {
     light.on = true;
     return await this.client.lights.save(light);
   }
+
   async turnLightOff(light) {
     light.on = false;
     return await this.client.lights.save(light);
+  }
+
+  async turnLightUp(light, increment) {
+    light.incrementBrightness = increment;
+    console.log(light);
+    return await this.client.lights.save(light);
+  }
+
+  async turnLightDown(light, increment) {
+    return await this.turnLightUp(light, -increment);
   }
 }
 
