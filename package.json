@@ -7,7 +7,8 @@
     "on": "node main.js on",
     "off": "node main.js off",
     "up": "node main.js up",
-    "down": "node main.js down"
+    "down": "node main.js down",
+    "setup": "node setup.js"
   },
   "author": "Ryan Braganza <ryan.braganza@gmail.com>",
   "license": "MIT",
